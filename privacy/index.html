@@ -31,7 +31,7 @@
 
       <h2>Welke gegevens in de app terechtkomen</h2>
       <ul>
-        <li><strong>Je account:</strong> naam, e-mailadres, bedrijfsnaam, lidmaatschap van je bedrijfsomgeving, een wachtwoordhash en inloggegevens voor je sessie.</li>
+        <li><strong>Je account:</strong> naam, e-mailadres, bedrijfsnaam, lidmaatschap van je bedrijfsomgeving en inloggegevens voor je sessie. Bij aanmelden met een wachtwoord bewaart Berry een wachtwoordhash; bij aanmelden met Google een vaste Google-account-ID.</li>
         <li><strong>Je content:</strong> bronvideo’s, foto’s, ondersteunde bijlagen, bestandsnamen, titels, captions, montage-instructies, opgeslagen versies, afgewerkte video’s en publicatiemomenten. Beeld, stem en tekst kunnen personen herkenbaar maken. Spraak kan in een transcriptie terechtkomen.</li>
         <li><strong>Review:</strong> de opgegeven naam van de reviewer, de beslissing en het feedbackbericht.</li>
         <li><strong>Je sociale verbindingen:</strong> het platform, account- of pagina-ID, weergavenaam, beschikbare gebruikersnaam, verleende toegang, versleutelde toegangstokens en vervalinformatie.</li>
@@ -44,6 +44,10 @@
       <p>Berry gebruikt de gegevens om je account en toegang te beheren, beelden en versies te bewaren, de gevraagde montage voor te bereiden, review mogelijk te maken en door jou gekozen publicaties uit te voeren en op te volgen. Technische controles beschermen de toegang tot bedrijfsomgevingen en de geldigheid van aanmeldpogingen.</p>
       <p>Noodzakelijke account- en opdrachtgegevens worden gebruikt om de afgesproken testdienst uit te voeren. De rechtsgrond daarvoor is de uitvoering van die overeenkomst. Voor eigen toegangs- en foutcontroles is het gerechtvaardigde belang het beschermen van de testomgeving tegen misbruik en onbevoegde toegang. Een privacyverzoek wordt behandeld om aan de toepasselijke wettelijke verplichtingen te voldoen; andere contactvragen om je vraag te kunnen beantwoorden. Voor die laatste verwerking is het gerechtvaardigde belang het onderhouden van het contact dat je zelf begint.</p>
       <p>Verstrek alleen gegevens die voor je testopdracht nodig zijn. Zonder de noodzakelijke accountgegevens kun je geen account gebruiken; zonder beelden of platformtoegang kan Berry de bijbehorende opdracht niet uitvoeren. Een toestemmingsscherm van Meta of TikTok regelt de toegang tot dat platform.</p>
+
+      <h2>Aanmelden met Google</h2>
+      <p>Als je met Google aanmeldt, gebruikt Berry je vaste Google-account-ID, naam en e-mailadres om je Berry-account en studio aan te maken of te herkennen. Je meldt je bij Google zelf aan; Berry ontvangt je Google-wachtwoord niet.</p>
+      <p>Deze aanmeldkoppeling vraagt alleen toegang tot je basisprofiel en e-mailadres. Ze geeft Berry geen toegang tot je Gmail, Google Drive of agenda. Google-toegangstokens worden alleen tijdens het aanmelden gebruikt en worden niet opgeslagen. Google verwerkt ook gegevens voor zijn eigen aanmelddienst; lees de <a href="https://policies.google.com/privacy">privacyverklaring van Google</a>.</p>
 
       <h2>Facebook, Instagram en TikTok verbinden</h2>
       <p>Je logt in bij het sociale platform zelf. Berry krijgt via die verbinding toegangstokens en ontvangt geen wachtwoord van je sociale account.</p>
@@ -61,13 +65,14 @@
       <p>Reviewlinks vervallen na zeven dagen. Een vervangende link of gewijzigde contentversie maakt de eerdere link onbruikbaar. Deel een reviewlink alleen met de bedoelde personen. Het vervallen van een link verwijdert de bestanden niet.</p>
 
       <h2>Waar de gegevens worden verwerkt</h2>
-      <p>De app en de private mediaopslag draaien in de huidige testfase lokaal. Het openbare HTTPS-testadres loopt via ngrok. ChatCut en OpenAI ontvangen gegevens wanneer je hun montagefuncties gebruikt; Meta en TikTok wanneer je die diensten verbindt of er een publicatie naartoe stuurt.</p>
+      <p>De Berry-app draait op Railway. Account- en contentgegevens staan in PostgreSQL; mediabestanden worden in een private opslagbucket op Railway bewaard. Google wordt gebruikt wanneer je met Google aanmeldt. ChatCut en OpenAI ontvangen gegevens wanneer je hun montagefuncties gebruikt; Meta en TikTok wanneer je die diensten verbindt of er een publicatie naartoe stuurt.</p>
       <p>Deze publieke informatiesite wordt op GitHub Pages gehost. Verzoeken naar de site lopen langs GitHub, dat technische bezoekgegevens kan verwerken. Lees ook de <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacyverklaring van GitHub</a>.</p>
       <p>Het privacycontactformulier gebruikt Google Forms. Je vult daar zelf je e-mailadres en bericht in; het formulier verzamelt je e-mailadres niet automatisch via je account. De antwoorden worden niet als openbare antwoordensamenvatting gedeeld en zijn bestemd voor de beheerder om je vraag of verzoek af te handelen. Google verwerkt ook gegevens voor de werking van zijn eigen dienst. Lees de <a href="https://policies.google.com/privacy">privacyverklaring van Google</a>. Deel in je bericht alleen wat nodig is voor je vraag, geen wachtwoorden of toegangstokens.</p>
-      <p>Een lokaal draaiende app betekent niet dat alle verwerking lokaal of binnen Europa blijft. De externe diensten hebben hun eigen verwerkingslocaties en afspraken. Deel tijdens de test geen inhoud waarvoor die verwerkingswijze ongeschikt is.</p>
+      <p>De externe diensten hebben hun eigen verwerkingslocaties en afspraken. Deze verklaring doet geen toezegging dat alle verwerking binnen Europa blijft. Deel tijdens de test geen inhoud waarvoor die verwerkingswijze ongeschikt is.</p>
 
       <h2>Cookies en bescherming van toegang</h2>
       <p>De Berry-app gebruikt een sessiecookie om je ingelogd te houden. Die cookie heeft een looptijd van zeven dagen. Uitloggen verwijdert je actieve sessie. Websites van verbonden platforms kunnen hun eigen cookies gebruiken.</p>
+      <p>Bij aanmelden met Google gebruikt Berry ook een beveiligde tijdelijke cookie om de aanmeldpoging te controleren. Die vervalt na tien minuten en wordt bij de terugkeer van Google verwijderd.</p>
       <p>Berry bewaart wachtwoorden als hashes en sociale toegangstokens versleuteld. Gewone accountoverzichten sturen die tokens niet naar de browser. Geen beveiligingsmaatregel sluit ieder risico uit.</p>
 
       <h2>Loskoppelen en bewaren</h2>
